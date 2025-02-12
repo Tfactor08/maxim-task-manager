@@ -2,7 +2,7 @@
 
 ## Application Configuration
 
-Below is an example of a `application.properties` file for a Spring Boot application:
+Below is an example of a `application.properties` file:
 
 ```properties
 spring.application.name=TaskManager
