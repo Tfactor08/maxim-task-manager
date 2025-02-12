@@ -1,0 +1,16 @@
+/target/
+/bin/
+/build/
+/out/
+
+*.swp
+
+*.log
+
+.mvn/
+mvnw
+mvnw.cmd
+
+application.properties
+application-dev.properties
+application-prod.properties
