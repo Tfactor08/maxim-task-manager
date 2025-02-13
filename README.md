@@ -30,7 +30,7 @@ chmod u+x test-api-*
   ```
 - Get a single task with `id`
   ```bash
-    ./test-api-get.sh [id]:
+  ./test-api-get.sh [id]:
   ```
 3. Test the /tasks POST method (will create a new task with the title "test-task"):
 ```bash
