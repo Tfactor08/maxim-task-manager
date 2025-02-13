@@ -1,6 +1,6 @@
 package com.tasks.taskmanager.model;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -15,12 +15,12 @@ public class Task {
     private Long id;
     private String title;
     private String description;
-    private LocalDateTime createdAt;
+    private LocalDate createdAt;
     private boolean completed;
 
     @PrePersist
     protected void onCreate() {
-        createdAt = LocalDateTime.now();
+        createdAt = LocalDate.now();
     }
 
     public Long getId() {
@@ -47,11 +47,11 @@ public class Task {
         this.description = description;
     }
 
-    public LocalDateTime getCreatedAt() {
+    public LocalDate getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(LocalDateTime createdAt) {
+    public void setCreatedAt(LocalDate createdAt) {
         this.createdAt = createdAt;
     }
 
