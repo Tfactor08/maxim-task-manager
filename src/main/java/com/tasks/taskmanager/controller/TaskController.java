@@ -38,4 +38,19 @@ public class TaskController {
     public void deleteTask(@PathVariable Long id) {
         taskService.deleteTask(id);
     }
+
+    @GetMapping("/today")
+    public List<Task> getTasksForToday(@RequestParam(required = false) Boolean completed) {
+        return taskService.getTasksForToday(completed);
+    }
+
+    @GetMapping("/this-week")
+    public List<Task> getTasksForThisWeek(@RequestParam(required = false) Boolean completed) {
+        return taskService.getTasksForThisWeek(completed);
+    }
+
+    @GetMapping("/this-month")
+    public List<Task> getTasksForThisMonth(@RequestParam(required = false) Boolean completed) {
+        return taskService.getTasksForThisMonth(completed);
+    }
 }
