@@ -35,6 +35,7 @@ chmod u+x test-api-*
 3. Test the /tasks POST method (will create a new task with the title "test-task"):
 ```bash
 ./test-api-post.sh
+```
 4. Test the /tasks PUT method (will change the title of the task with the provided `id`):
 ```bash
 ./test-api-put.sh [id]
