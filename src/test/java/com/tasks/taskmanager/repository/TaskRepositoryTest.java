@@ -23,7 +23,7 @@ public class TaskRepositoryTest {
     private TaskRepository taskRepository;
 
     @Test
-    public void TaskRepository_FindByCreatedAt_ReturnsFoundTask() {
+    public void TaskRepository_FindByCreatedAt_ReturnFoundTask() {
         Task task = new Task(); task.setTitle("task1");
         LocalDate now = LocalDate.now();
 
